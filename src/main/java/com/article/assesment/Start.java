@@ -56,7 +56,18 @@ public class Start {
         * if later removed key is passed from the different part of a program.
         *
         * 3)The third one, EnumMap is a special Map implementations for Enum keys, this is also the fundamental difference between EnumMap and another general purpose Map class e.g. HashMap or Hashtable. Unlike others EnumMap only allows Enum constants to be used as keys.
-        *  If you try to store keys other than Enum than compiler will throw an erro
+        *  If you try to store keys other than Enum than compiler will throw an error
+        *
+        *                               Data structure                    Sorting                       Iterator        Nulls
+        *   Hashmap                     Hash table                          No                          Fail fast       Yes
+        *   LinkedHashMap               Hash table + linked list          Insertion or access order       Fail fast       Yes
+        *   IdentityHashMap             Array                               No                          Fail fast       Yes
+        *   WeakHashMap                 Hash table                          No                          Fail fast       Yes
+        *   Enummap                     Array                               Natural order               Weakly consistent No
+        *   TreeMap                     Red black tree                      Sorted                      Fail fast        Yes
+        *    ConcurrentHashMap          Hash tables                         No                        Weakly consistent  No
+        *  ConcurrentSkipListMap        Skip List                           Sorted                      Fail fast         No
+        *
         *
         *  */
     }
